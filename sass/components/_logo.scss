@@ -1,9 +1,10 @@
-.logo{
-	@extend %logo;
-	&__dark{
-		color: $logo-dark-theme;
-	}
-	&__light{
-		color: $logo-light-theme;
-	}
-}
+// .logo {
+//   @extend %logo;
+
+//   &--dark {
+//     color: var(--secondary-black-color);
+//   }
+//   &--light {
+//     color: var(--primary-white-color);
+//   }
+// }

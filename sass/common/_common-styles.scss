@@ -11,6 +11,14 @@ body {
   }
 }
 
+img {
+  display: block;
+  object-fit: cover;
+  object-position: center;
+  max-width: 100%;
+  height: auto;
+}
+
 .main {
   padding-top: 60px;
 
@@ -57,16 +65,16 @@ body {
   }
 }
 
-.section-title {
-  font-size: 28px;
-  line-height: calc(33 / 28);
-  color: $subtitle-dark;
+// .section-title {
+//   font-size: 28px;
+//   line-height: calc(33 / 28);
+//   color: $subtitle-dark;
 
-  @media (min-width: 768px) {
-    font-size: 36px;
-    line-height: 1.2;
-  }
-}
+//   @media (min-width: 768px) {
+//     font-size: 36px;
+//     line-height: 1.2;
+//   }
+// }
 
 .social-icons {
   display: flex;

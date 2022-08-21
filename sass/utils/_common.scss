@@ -1,0 +1,56 @@
+body {
+  color: var(--primary-text-color);
+  background-color: var(--primary-white-color);
+  font-family: var(--main-font);
+  font-size: 14px;
+  letter-spacing: 0.03em;
+}
+
+button {
+  cursor: pointer;
+}
+
+img {
+  display: block;
+  object-fit: cover;
+  object-position: center;
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.section-title {
+  color: var(--title-text-color);
+  margin-bottom: 30px;
+
+  font-size: 28px;
+  line-height: 1.17;
+  text-align: center;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 36px;
+    margin-bottom: 50px;
+  }
+}
