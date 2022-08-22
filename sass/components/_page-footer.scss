@@ -1,3 +1,62 @@
+.footer {
+  padding: 60px 0;
+  background-color: var(--primary-black-color);
+
+  &__container {
+    @media (min-width: 768px) {
+      display: flex;
+    }
+
+    @media (max-width: 1199px) {
+      flex-wrap: wrap;
+      justify-content: center;
+      column-gap: 165px;
+      row-gap: 60px;
+      text-align: center;
+    }
+  }
+
+  &__title {
+    font-size: 14px;
+    line-height: 1.14;
+    text-align: center;
+    text-transform: uppercase;
+
+    color: var(--primary-white-color);
+  }
+}
+
+// .footer-social-icons-list {
+//   list-style-type: none;
+//   margin: 20px 0 0;
+//   display: flex;
+// }
+
+// .footer-social-icons-link {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   border-radius: 50%;
+//   width: 44px;
+//   height: 44px;
+
+//   background-color: rgba(255, 255, 255, 0.1);
+//   margin: 0 10px 0 0;
+//   transition: background-color var(--transition-func);
+
+//   &:hover,
+//   &:focus {
+//     background-color: var(--accent-color);
+//   }
+// }
+
+// .footer-social-icon {
+//   width: 20px;
+//   height: 20px;
+//   fill: var(--primary-white-color);
+//   transition: fill var(--transition-func);
+// }
+
 // .footer {
 //   padding: 60px 0;
 //   background-color: var(--primary-black-color);
@@ -46,36 +105,36 @@
 //   transition: fill var(--transition-func);
 // }
 
-// .adress {
-//   margin-top: 20px;
-//   font-style: normal;
+.adress {
+  margin-top: 20px;
+  font-style: normal;
 
-//   &__item {
-//     margin-bottom: 9px;
+  &__item {
+    margin-bottom: 9px;
 
-//     &:last-child {
-//       margin-bottom: 0;
-//     }
-//   }
-// }
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
 
-// .adress__link {
-//   color: var(--adress-color);
-//   transition: color var(--transition-func);
+.adress__link {
+  color: var(--adress-color);
+  transition: color var(--transition-func);
 
-//   font-style: normal;
-//   line-height: 1.71;
+  font-style: normal;
+  line-height: 1.71;
 
-//   &:hover,
-//   &:focus {
-//     color: var(--accent-color);
-//   }
-// }
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
 
-// .adress__link--map {
-//   color: var(--primary-white-color);
-//   line-height: 1.71;
-// }
+.adress__link--map {
+  color: var(--primary-white-color);
+  line-height: 1.71;
+}
 
 // .subscribe {
 //   margin-left: 93px;

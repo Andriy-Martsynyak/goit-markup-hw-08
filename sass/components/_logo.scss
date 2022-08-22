@@ -1,10 +1,10 @@
-// .logo {
-//   @extend %logo;
+.logo {
+  @extend %logo;
 
-//   &--dark {
-//     color: var(--secondary-black-color);
-//   }
-//   &--light {
-//     color: var(--primary-white-color);
-//   }
-// }
+  &--dark {
+    color: var(--secondary-black-color);
+  }
+  &--light {
+    color: var(--primary-white-color);
+  }
+}

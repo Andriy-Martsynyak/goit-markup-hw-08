@@ -51,35 +51,39 @@
                 class="mobile-nav__icon"
                 width="40"
                 height="40"
-                aria-label="Кнопка открытия мобильного меню"
+                aria-label="Кнопка відкриття мобільного меню"
               >
                 <use href="./images/icons.svg#mobile-menu-close"></use>
               </svg>
             </button>
-            <ul class="mobile-menu">
-              <li class="mobile-menu__item">
+            <ul class="mobile-menu list">
+              <li class="mobile-menu__item link">
                 <a class="mobile-menu__link mobile-menu__link--active" href="index.html">Студія</a>
               </li>
-              <li class="mobile-menu__item">
-                <a class="mobile-menu__link" href="portfolio.html">Портфоліо</a>
+              <li class="mobile-menu__item link">
+                <a class="mobile-menu__link link" href="portfolio.html">Портфоліо</a>
               </li>
-              <li class="mobile-menu__item"><a class="mobile-menu__link" href="#">Контакти</a></li>
+              <li class="mobile-menu__item link">
+                <a class="mobile-menu__link link" href="#">Контакти</a>
+              </li>
             </ul>
             <div class="connection">
-              <ul class="mobile-contacts">
-                <li class="mobile-contacts__item">
-                  <a class="mobile-contacts__link" href="tel:+380961111111">+38 096 111 11 11</a>
+              <ul class="mobile-contacts list">
+                <li class="mobile-contacts__item link" link>
+                  <a class="mobile-contacts__link link" href="tel:+380961111111"
+                    >+38 096 111 11 11</a
+                  >
                 </li>
-                <li class="mobile-contacts__item">
-                  <a class="mobile-contacts__link" href="mailto:info@devstudio.com"
+                <li class="mobile-contacts__item link">
+                  <a class="mobile-contacts__link link" href="mailto:info@devstudio.com"
                     >info@devstudio.com</a
                   >
                 </li>
               </ul>
-              <ul class="mobile-social">
+              <ul class="mobile-social list">
                 <li class="mobile-social__item">
                   <a
-                    class="mobile-social__link"
+                    class="mobile-social__link link"
                     href="#"
                     target="_blank"
                     rel="noopener noreferrer nofollow"
@@ -88,7 +92,7 @@
                 </li>
                 <li class="mobile-social__item">
                   <a
-                    class="mobile-social__link"
+                    class="mobile-social__link link"
                     href="#"
                     target="_blank"
                     rel="noopener noreferrer nofollow"
@@ -97,7 +101,7 @@
                 </li>
                 <li class="mobile-social__item">
                   <a
-                    class="mobile-social__link"
+                    class="mobile-social__link link"
                     href="#"
                     target="_blank"
                     rel="noopener noreferrer nofollow"
@@ -106,7 +110,7 @@
                 </li>
                 <li class="mobile-social__item">
                   <a
-                    class="mobile-social__link"
+                    class="mobile-social__link link"
                     href="#"
                     target="_blank"
                     rel="noopener noreferrer nofollow"
@@ -128,7 +132,7 @@
             >
           </li>
           <li class="contacts__item">
-            <a class="contacts__link link" href="tel:380961111111">
+            <a class="contacts__link" href="tel:380961111111">
               <svg class="contacts__icon" width="10" height="16">
                 <use href="./images/icons.svg#smartphone"></use>
               </svg>
@@ -509,7 +513,7 @@
     </main>
 
     <!-- Футер -->
-    <!-- <footer class="footer section">
+    <footer class="footer section">
       <div class="footer__container container">
         <div class="connect">
           <a href="./index.html" class="logo link"><span class="logo--light">Web</span>Studio</a>
@@ -536,31 +540,31 @@
         </div>
         <div class="join-us">
           <h2 class="footer__title">Приєднуйтесь</h2>
-          <ul class="footer-social-icons-list">
-            <li class="footer-social-icons-list-item">
-              <a href="#" target="_blank" class="footer-social-icons-link">
-                <svg class="footer-social-icon">
+          <ul class="social-icons join-us__social-icons list">
+            <li class="social-icons__item link">
+              <a href="#" target="_blank" class="social-icons__link social-icons__link--join-us">
+                <svg class="social-icons__icon social-icons__icon--join-us" width="20" height="20">
                   <use href="./images/icons.svg#instagram"></use>
                 </svg>
               </a>
             </li>
-            <li class="footer-social-icons-list-item">
-              <a href="#" target="_blank" class="footer-social-icons-link">
-                <svg class="footer-social-icon">
+            <li class="social-icons__item link">
+              <a href="#" target="_blank" class="social-icons__link social-icons__link--join-us">
+                <svg class="social-icons__icon social-icons__icon--join-us" width="20" height="20">
                   <use href="./images/icons.svg#twitter"></use>
                 </svg>
               </a>
             </li>
-            <li class="footer-social-icons-list-item">
-              <a href="#" target="_blank" class="footer-social-icons-link">
-                <svg class="footer-social-icon">
+            <li class="social-icons__item link">
+              <a href="#" target="_blank" class="social-icons__link social-icons__link--join-us">
+                <svg class="social-icons__icon social-icons__icon--join-us" width="20" height="20">
                   <use href="./images/icons.svg#facebook"></use>
                 </svg>
               </a>
             </li>
-            <li class="footer-social-icons-list-item">
-              <a href="#" target="_blank" class="footer-social-icons-link">
-                <svg class="footer-social-icon">
+            <li class="social-icons__item link">
+              <a href="#" target="_blank" class="social-icons__link social-icons__link--join-us">
+                <svg class="social-icons__icon social-icons__icon--join-us" width="20" height="20">
                   <use href="./images/icons.svg#linkedin"></use>
                 </svg>
               </a>
@@ -571,7 +575,7 @@
           <h2 class="footer__title">Підпишіться на розсилку</h2>
           <form class="subscribe__form">
             <input class="subscribe__input" type="email" placeholder="E-mail" />
-            <button class="button button--primary subscribe__btn" type="submit">
+            <button class="button subscribe__button" type="submit">
               Підписатися
               <svg class="subscribe__icon" height="24" width="24">
                 <use href="./images/icons.svg#icon-send"></use>
@@ -580,7 +584,8 @@
           </form>
         </div>
       </div>
-    </footer> -->
+    </footer>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
