@@ -4,15 +4,37 @@
   margin: 0 auto;
   text-align: center;
 
-  background-color: #c4c4c4;
+  background-color: #808080;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url(/images/banner/banner-mobile.jpg);
+    url('../images/banner/banner-mobile.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 
+  @include mq(retina) {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url('../images/banner/banner-mobile@2x.jpg');
+  }
+
+  @media (min-width: 768px) {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url('../images/banner/banner-tablet.jpg');
+
+    @include mq(retina) {
+      background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url('../images/banner/banner-tablet@2x.jpg');
+    }
+  }
+
   @media (min-width: 1200px) {
     padding: 200px 0;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url('../../images/banner/banner-desktop.jpg');
+
+    @include mq(retina) {
+      background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url('../../images/banner/banner-desktop@2x.jpg');
+    }
   }
 
   &__title {

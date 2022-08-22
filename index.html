@@ -155,64 +155,66 @@
       </section>
 
       <!-- Модальне вікно -->
-      <!-- <div class="backdrop backdrop--is-hidden" data-modal>
+      <div class="backdrop is-hidden" data-modal>
         <div class="modal">
-          <button class="modal-close-btn" type="button" data-modal-close>
-            <svg width="18" height="18">
-              <use href="./images/icons.svg#close-btn"></use>
-            </svg>
-          </button>
-          <p class="modal-title">Залиште свої дані, ми вам передзвонимо</p>
-          <form class="modal-form">
-            <ul class="modal-form-list list">
-              <li class="modal-form-item">
-                <label class="modal-form-label">
-                  Ім'я
-                  <input class="modal-form-field" type="text" name="user-name" />
-                  <svg class="modal-form-field-icon" width="18" height="18">
-                    <use href="./images/sprite .svg#icon-person"></use>
-                  </svg>
-                </label>
-              </li>
-              <li class="modal-form-item">
-                <label class="modal-form-label">
-                  Телефон
-                  <input class="modal-form-field" type="tel" name="phone-number" />
-                  <svg class="modal-form-field-icon" width="18" height="18">
-                    <use href="./images/sprite .svg#icon-phone"></use>
-                  </svg>
-                </label>
-              </li>
-              <li class="modal-form-item">
-                <label class="modal-form-label">
-                  Пошта
-                  <input class="modal-form-field" type="email" name="user-email" />
-                  <svg class="modal-form-field-icon" width="18" height="18">
-                    <use href="./images/sprite .svg#icon-email"></use>
-                  </svg>
-                </label>
-              </li>
-              <li class="modal-form-item">
-                <label class="modal-form-label">
-                  Коментар
-                  <textarea
-                    class="modal-form-field comment-field"
-                    name="comment"
-                    placeholder="Введіть текст"
-                  ></textarea>
-                </label>
-              </li>
-            </ul>
-            <label class="agreement-label">
-              <input class="agreement-checkbox" type="checkbox" name="agreement" />
-              <span class="checkbox-icon"></span>
-              Погоджуюся з розсилкою та приймаю
-              <a class="agreement-label-link" href="#" target="_blank"> Умови договору</a>
-            </label>
-            <button class="modal-form-btn submit-btn" type="submit">Відправити</button>
-          </form>
+          <div class="modal__content">
+            <button class="modal__close-btn" type="button" data-modal-close>
+              <svg class="modal__close-icon" width="18" height="18">
+                <use href="./images/icons.svg#close-btn"></use>
+              </svg>
+            </button>
+            <p class="modal__title">Залиште свої дані, ми вам передзвонимо</p>
+            <form class="form" name="registration-form">
+              <ul class="form__list list">
+                <li class="form__item">
+                  <label class="form__label">
+                    Ім'я
+                    <input class="form__field" type="text" name="user-name" />
+                    <svg class="form__icon" width="18" height="18">
+                      <use href="./images/sprite .svg#icon-person"></use>
+                    </svg>
+                  </label>
+                </li>
+                <li class="form__item">
+                  <label class="form__label">
+                    Телефон
+                    <input class="form__field" type="tel" name="phone-number" />
+                    <svg class="form__icon" width="18" height="18">
+                      <use href="./images/sprite .svg#icon-phone"></use>
+                    </svg>
+                  </label>
+                </li>
+                <li class="form__item">
+                  <label class="form__label">
+                    Пошта
+                    <input class="form__field" type="email" name="user-email" />
+                    <svg class="form__icon" width="18" height="18">
+                      <use href="./images/sprite .svg#icon-email"></use>
+                    </svg>
+                  </label>
+                </li>
+                <li class="form__item">
+                  <label class="form__label">
+                    Коментар
+                    <textarea
+                      class="form__field form__field--comment"
+                      name="comment"
+                      placeholder="Введіть текст"
+                    ></textarea>
+                  </label>
+                </li>
+              </ul>
+              <label class="form__agreement">
+                <input class="form__checkbox" type="checkbox" name="agreement" />
+                <span class="form__checkbox-icon"></span>
+                Погоджуюся з розсилкою та приймаю
+                <a class="form__link" href="#" target="_blank"> Умови договору</a>
+              </label>
+              <button class="button button--form" type="submit">Відправити</button>
+            </form>
+          </div>
         </div>
-      </div> -->
+      </div>
 
       <!-- Якості -->
       <section class="features section">
@@ -273,15 +275,33 @@
           <h2 class="section-title">Чим ми займаємося</h2>
           <ul class="activity__list list">
             <li class="activity__item">
-              <img src="./images/box_1.jpg" alt="Работа на ПК" width="370" />
+              <img
+                srcset="./images/work/image-1-370.jpg 370w, ./images/work/image-1-740.jpg 740w"
+                src="./images/work/image-1-370.jpg"
+                alt="Desk"
+                sizes="370px"
+                loading="lazy"
+              />
               <h3 class="activity__subtitle">Декстопні додатки</h3>
             </li>
             <li class="activity__item">
-              <img src="./images/box_2.jpg" alt="Работа на телефоне" width="370" />
+              <img
+                srcset="./images/work/image-2-370.jpg 370w, ./images/work/image-2-740.jpg 740w"
+                src="./images/work/image-2-370.jpg"
+                alt="Mobile phone"
+                sizes="370px"
+                loading="lazy"
+              />
               <h3 class="activity__subtitle">Мобільні додатки</h3>
             </li>
             <li class="activity__item">
-              <img src="./images/box_3.jpg" alt="Работа на планшете" width="370" />
+              <img
+                srcset="./images/work/image-3-370.jpg 370w, ./images/work/image-3-740.jpg 740w"
+                src="./images/work/image-3-370.jpg"
+                alt="Tablet"
+                sizes="370px"
+                loading="lazy"
+              />
               <h3 class="activity__subtitle">Дизайнерські рішення</h3>
             </li>
           </ul>
@@ -295,10 +315,16 @@
           <ul class="team__list list">
             <li class="team__item">
               <img
-                class="team__image"
-                src="./images/img_PD.jpg"
-                alt="Фото дизайнера продукта"
-                width="270"
+                srcset="
+                  ./images/team/member-1-354.jpg   354w,
+                  ./images/team/member-1-450.jpg   450w,
+                  ./images/team/member-1-708.jpg   708w,
+                  ./images/team/member-1-1062.jpg 1062w
+                "
+                src="./images/team/member-1-354.jpg"
+                alt="Team member"
+                sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw"
+                loading="lazy"
               />
               <div class="team__text-wrapper">
                 <h3 class="team__subtitle">Ігор Дем'яненко</h3>
@@ -337,10 +363,16 @@
             </li>
             <li class="team__item">
               <img
-                class="team__image"
-                src="./images/img_FD.jpg"
-                alt="Фото Разработчика"
-                width="270"
+                srcset="
+                  ./images/team/member-2-354.jpg   354w,
+                  ./images/team/member-2-450.jpg   450w,
+                  ./images/team/member-2-708.jpg   708w,
+                  ./images/team/member-2-1062.jpg 1062w
+                "
+                src="./images/team/member-2-354.jpg"
+                alt="Team member"
+                sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw"
+                loading="lazy"
               />
               <div class="team__text-wrapper">
                 <h3 class="team__subtitle">Ольга Рєпіна</h3>
@@ -379,10 +411,16 @@
             </li>
             <li class="team__item">
               <img
-                class="team__image"
-                src="./images/img_M.jpg"
-                alt="Фото Маркетолога"
-                width="270"
+                srcset="
+                  ./images/team/member-3-354.jpg   354w,
+                  ./images/team/member-3-450.jpg   450w,
+                  ./images/team/member-3-708.jpg   708w,
+                  ./images/team/member-3-1062.jpg 1062w
+                "
+                src="./images/team/member-3-354.jpg"
+                alt="Team member"
+                sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw"
+                loading="lazy"
               />
               <div class="team__text-wrapper">
                 <h3 class="team__subtitle">Микола Тарасов</h3>
@@ -420,7 +458,18 @@
               </div>
             </li>
             <li class="team__item">
-              <img class="team__image" src="./images/img_D.jpg" alt="Фото дизайнера" width="270" />
+              <img
+                srcset="
+                  ./images/team/member-4-354.jpg   354w,
+                  ./images/team/member-4-450.jpg   450w,
+                  ./images/team/member-4-708.jpg   708w,
+                  ./images/team/member-4-1062.jpg 1062w
+                "
+                src="./images/team/member-4-354.jpg"
+                alt="Team member"
+                sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw"
+                loading="lazy"
+              />
               <div class="team__text-wrapper">
                 <h3 class="team__subtitle">Михайло Єрмаков</h3>
                 <p class="team__text">UI Designer</p>
