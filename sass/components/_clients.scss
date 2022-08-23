@@ -15,15 +15,15 @@
   }
 
   &__item {
-    width: 152px;
+    width: calc((100% - 30px) / 2);
     height: 92px;
 
     @media (min-width: 768px) {
-      width: 226px;
+      width: calc((100% - 60px) / 3);
     }
 
     @media (min-width: 1200px) {
-      width: 170px;
+      width: calc((100% - 150px) / 6);
     }
   }
 
