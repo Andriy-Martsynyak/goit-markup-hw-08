@@ -78,7 +78,7 @@
 
     &:hover,
     &:focus {
-      fill: -var(--accent-color);
+      fill: var(--accent-color);
     }
   }
 
@@ -119,7 +119,7 @@
     transition: fill var(--transition-func);
 
     .form__field:focus + & {
-      fill: -var(-var(--accent-color));
+      fill: var(--accent-color);
     }
   }
 
@@ -136,7 +136,7 @@
     transition: border-color var(--transition-func);
 
     &:focus {
-      border-color: -var(--accent-color);
+      border-color: var(--accent-color);
     }
   }
 
@@ -168,7 +168,7 @@
     display: inline-block;
     margin: 0 0 0 3px;
     text-decoration-line: underline;
-    color: -var(--accent-color);
+    color: var(--accent-color);
     font-size: 12px;
 
     @media (min-width: 768px) {
@@ -209,9 +209,9 @@
     }
 
     .form__checkbox:checked + & {
-      background-color: -var(--accent-color);
+      background-color: var(--accent-color);
       background-origin: border-box;
-      border-color: -var(--accent-color);
+      border-color: var(--accent-color);
     }
 
     .form__checkbox:checked + &::before {
