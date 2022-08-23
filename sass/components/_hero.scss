@@ -29,11 +29,11 @@
   @media (min-width: 1200px) {
     padding: 200px 0;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url('../../images/banner/banner-desktop.jpg');
+      url('../images/banner/banner-desktop.jpg');
 
     @include mq(retina) {
       background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url('../../images/banner/banner-desktop@2x.jpg');
+        url('../images/banner/banner-desktop@2x.jpg');
     }
   }
 
